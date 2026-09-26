@@ -1,0 +1,2299 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bioinfo Compass — Learn Bioinformatics by Doing</title><meta name="description" content="Bioinfo Compass: curated tools, guided workflows, practical bioinformatics lessons, Python code, datasets and challenges."><meta property="og:title" content="Bioinfo Compass"><meta property="og:description" content="Learn what to use, why to use it, and how to interpret the result."><meta name="twitter:card" content="summary"><script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bioinfo Compass","educationalLevel":"University","learningResourceType":["Guide","Tutorial","Reference"],"about":["Bioinformatics","Sequence analysis","Phylogenetics","Molecular docking","Molecular dynamics","Python"]}</script><style>
+
+:root{--paper:#f2efe4;--card:#fbfaf3;--ink:#1d2a25;--soft:#526058;--line:#d8d2bf;--moss:#2f6f5e;--deep:#1f4d40;--rust:#af552f;--accent:#e8dfca;--ok:#2f6f5e;--warn:#94651e;--max:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:var(--deep)}a:hover{color:var(--rust)}.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:var(--card);padding:10px;z-index:100}.sitebar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.sitebar-inner{max-width:var(--max);margin:auto;padding:14px 22px;display:flex;gap:18px;align-items:center;justify-content:space-between}.brand{font-family:Georgia,serif;font-size:22px;font-weight:700;text-decoration:none;color:var(--ink)}.brand em{color:var(--deep);font-weight:500}.topnav{display:flex;gap:4px;flex-wrap:wrap}.topnav a,.tab-btn{border:0;background:transparent;padding:8px 10px;border-radius:6px;text-decoration:none;color:var(--soft);font-weight:650;cursor:pointer}.topnav a:hover,.topnav a[aria-current="page"],.tab-btn.active{background:var(--accent);color:var(--deep)}.hero{max-width:var(--max);margin:auto;padding:70px 22px 42px;display:grid;grid-template-columns:1.4fr .8fr;gap:32px;align-items:end}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--rust);font-weight:800}.hero h1{font-family:Georgia,serif;font-size:clamp(44px,7vw,78px);line-height:.98;margin:.2em 0}.hero h1 em{font-weight:400;color:var(--deep)}.hero p{font-size:19px;color:var(--soft);max-width:68ch}.hero-card,.panel,.card,.lesson,.workflow,.challenge,.profile-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}.hero-card strong{font-family:Georgia,serif;font-size:20px}.hero-card ul{padding-left:20px}.cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;background:var(--deep);color:white;text-decoration:none;padding:10px 14px;border-radius:6px;font-weight:750;border:1px solid var(--deep)}.btn.secondary{background:transparent;color:var(--deep)}.section{max-width:var(--max);margin:auto;padding:32px 22px 60px}.section h2{font-family:Georgia,serif;font-size:34px;margin:0 0 8px}.lede{color:var(--soft);max-width:78ch;margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid.two{grid-template-columns:repeat(2,1fr)}.card h3,.lesson h3,.workflow h3,.challenge h3{font-family:Georgia,serif;margin-top:0}.kicker{font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--rust)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 8px;font-size:11px;margin:2px;color:var(--soft);background:#fff8}.tabs{max-width:var(--max);margin:0 auto;padding:0 22px 12px;display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}.tab-btn{font-size:14px}.tab-btn.active{box-shadow:inset 0 -2px var(--moss)}.tab-panel{display:none}.tab-panel.active{display:block}.controls{display:grid;grid-template-columns:1.5fr repeat(3,auto);gap:10px;margin:18px 0}.controls input,.controls select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}.resource-layout{display:grid;grid-template-columns:220px 1fr;gap:24px}.side-index{position:sticky;top:74px;align-self:start;max-height:calc(100vh - 100px);overflow:auto}.side-index button{display:block;width:100%;text-align:left;padding:7px 8px;border:0;background:transparent;color:var(--soft);cursor:pointer;border-left:2px solid transparent}.side-index button:hover{color:var(--deep);border-left-color:var(--moss)}.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.resource-card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px}.resource-card h4{font-family:Georgia,serif;font-size:18px;margin:0 0 4px}.meta{font-size:12px;color:var(--soft);margin-bottom:8px}.resource-card p{font-size:13.5px;color:var(--soft)}.resource-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}.result-count{font:600 12px ui-monospace,monospace;color:var(--soft)}.step{display:grid;grid-template-columns:36px 1fr;gap:12px;margin:12px 0}.step-num{width:32px;height:32px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;font-weight:800}.why{border-left:3px solid var(--moss);padding-left:12px;color:var(--soft)}pre{overflow:auto;background:#17201c;color:#edf3ef;padding:14px;border-radius:8px;font-size:13px}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.mistake{background:#fff5e6;border:1px solid #e5c991;border-radius:8px;padding:12px;margin:12px 0}.mistake strong{color:#7a4f0f}.glossary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.term{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px}.term dt{font-weight:800;color:var(--deep)}.term dd{margin:4px 0 0;color:var(--soft);font-size:14px}.profile-hero{max-width:var(--max);margin:auto;padding:84px 22px 42px}.profile-hero h1{font-family:Georgia,serif;font-size:clamp(42px,7vw,74px);line-height:1;margin:.1em 0}.profile-hero p{font-size:20px;color:var(--soft);max-width:65ch}.footer{border-top:1px solid var(--line);margin-top:40px}.footer-inner{max-width:var(--max);margin:auto;padding:28px 22px 48px;color:var(--soft);font-size:13px}.notice{padding:12px 14px;background:#eef6f2;border:1px solid #b9d8cb;border-radius:8px}.status{font-size:12px;color:var(--soft)}@media(max-width:900px){.hero,.grid,.grid.two,.resource-layout,.resource-grid,.glossary-grid{grid-template-columns:1fr}.side-index{position:static;max-height:none}.controls{grid-template-columns:1fr 1fr}.hero{padding-top:48px}}@media(max-width:560px){.controls{grid-template-columns:1fr}.sitebar-inner{align-items:flex-start;flex-direction:column}.hero h1{font-size:46px}}@media(prefers-color-scheme:dark){:root{--paper:#151a17;--card:#1d2420;--ink:#ece9dd;--soft:#a9b2ab;--line:#344039;--moss:#71bea5;--deep:#8fd2bb;--rust:#e08a5b;--accent:#25332d}.btn{color:#102019}.mistake{background:#2b2418;border-color:#665631}.notice{background:#183126;border-color:#385d4e}}
+
+
+/* Philosophy */
+.philosophy-section{padding-bottom:80px}.philosophy-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.thought-section,.stories-section{margin-top:30px;padding-top:28px;border-top:1px solid var(--line)}.section-label{font:800 11px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--rust)}.thought-section h3,.stories-section h3{font-family:Georgia,serif;font-size:28px;margin:6px 0}.quote-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:34px 34px 26px;min-height:220px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}.quote-mark{position:absolute;left:18px;top:-22px;font-family:Georgia,serif;font-size:130px;line-height:1;color:color-mix(in srgb,var(--moss) 18%,transparent);pointer-events:none}.quote-card blockquote{position:relative;margin:0;font-family:Georgia,serif;font-size:clamp(25px,4vw,42px);line-height:1.22;max-width:26ch;letter-spacing:-.015em}.quote-meta{margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:var(--soft);font-size:13px}.philosophy-action{margin-top:14px;cursor:pointer}.story-heading-row{display:flex;justify-content:space-between;gap:20px;align-items:end}.comic-book{background:color-mix(in srgb,var(--card) 82%,var(--accent));border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px}.comic-titlebar{padding:4px 4px 14px;border-bottom:2px solid var(--ink)}.comic-titlebar h3{font-family:Georgia,serif;font-size:30px;margin:2px 0 0}.comic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}.comic-panel{min-height:220px;background:var(--card);border:2px solid var(--ink);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:12px;box-shadow:4px 4px 0 color-mix(in srgb,var(--ink) 15%,transparent)}.panel-number{font:800 10px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--rust)}.comic-scene{font-size:13px;color:var(--soft);font-style:italic;border-bottom:1px dashed var(--line);padding-bottom:10px}.speech{position:relative;background:var(--paper);border:1.5px solid var(--ink);border-radius:16px;padding:12px 14px;font-family:Georgia,serif;font-size:16px}.speech:after{content:"";position:absolute;left:20px;bottom:-9px;width:14px;height:14px;background:var(--paper);border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg)}.narration{margin-top:auto;background:var(--accent);border-left:3px solid var(--moss);padding:10px 11px;font-size:13px;color:var(--soft)}.closing-thought{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;margin-top:16px;padding:16px 18px;border-top:2px solid var(--ink);font-family:Georgia,serif}.closing-thought span{font:800 10px ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--rust)}.closing-thought strong{font-size:20px}.collection-note{margin-top:18px;color:var(--soft);font-size:12px}@media(max-width:900px){.comic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.philosophy-head,.story-heading-row{align-items:flex-start;flex-direction:column}.comic-grid{grid-template-columns:1fr}.quote-card{padding:28px 22px 22px}.quote-card blockquote{font-size:28px}.closing-thought{grid-template-columns:1fr}.comic-panel{min-height:auto}}
+
+
+</style>
+</head><body><a class="skip" href="#main">Skip to content</a><header class="sitebar"><div class="sitebar-inner"><a class="brand" href="#profile">Mahesh <em>Kulharia</em></a><nav class="topnav" aria-label="Primary"><a href="#profile">Profile</a><a href="#research">Research</a><a href="#teaching">Teaching & Lab</a><a href="#compass-home">Bioinfo Compass</a><a href="#contact">Contact</a></nav></div></header><main id="main">
+<section class="profile-hero" id="profile">
+  <div class="eyebrow">Computational Biology · Bioinformatics</div>
+  <h1>Prof. Mahesh Kulharia</h1>
+  <p>Academic work spanning computational biology, bioinformatics, molecular evolution, molecular modelling and practical computational training at the Central University of Himachal Pradesh.</p>
+  <div class="cta-row"><a class="btn" href="#compass-home">Open Bioinfo Compass</a><a class="btn secondary" href="#teaching">Teaching & Lab</a></div>
+</section>
+<section class="section" id="research">
+  <h2>Research</h2>
+  <p class="lede">Research themes are presented separately from the teaching platform so Bioinfo Compass remains an educational resource rather than an institutional profile page.</p>
+  <div class="grid">
+    <article class="profile-card"><div class="kicker">Theme 01</div><h3>Computational Biology</h3><p>Algorithmic and data-driven approaches to biological questions, with emphasis on reproducibility and biological interpretation.</p></article>
+    <article class="profile-card"><div class="kicker">Theme 02</div><h3>Molecular Modelling</h3><p>Protein structure, ligand recognition, docking, molecular dynamics and computational analysis of biomolecular systems.</p></article>
+    <article class="profile-card"><div class="kicker">Theme 03</div><h3>Evolution & Genomics</h3><p>Molecular evolution, comparative genomics and phylogenetic approaches to biological history and function.</p></article>
+  </div>
+</section>
+<section class="section" id="teaching">
+  <h2>Teaching & Lab</h2>
+  <p class="lede">Teaching resources are organized around concepts, practicals, interpretation and independent challenges.</p>
+  <div class="grid">
+    <article class="card"><div class="kicker">Sequence analysis</div><h3>From FASTA to biological inference</h3><p>Sequence retrieval, BLAST, alignment, conserved regions and interpretation.</p></article>
+    <article class="card"><div class="kicker">Structural bioinformatics</div><h3>Structure, docking & MD</h3><p>PDB literacy, docking controls, simulation workflows and trajectory interpretation.</p></article>
+    <article class="card"><div class="kicker">Programming</div><h3>Python for Bioinformatics</h3><p>Biological strings, FASTA, PDB parsing, file handling and reproducible analysis.</p></article>
+  </div>
+</section>
+<div id="compass-home"></div>
+<section class="hero"><div><div class="eyebrow">Explore · Learn · Workflows · Code · Challenges · Philosophy</div><h1>Bioinfo <em>Compass</em></h1><p>Learn what to use, why to use it, and how to interpret the result. A curated field guide and practical training environment for bioinformatics students.</p><div class="cta-row"><button class="btn" data-open-tab="learn">Start learning</button><button class="btn secondary" data-open-tab="workflows">Choose a workflow</button></div></div><aside class="hero-card"><strong>How Compass is different</strong><ul><li>Tools are connected to biological tasks.</li><li>Lessons include reasoning, common mistakes and interpretation.</li><li>Practical datasets are included.</li><li>Code begins with first principles before library abstractions.</li></ul><div class="status">Curated by Prof. Mahesh Kulharia · Last site review: Sep 2026 · Single-file deployment</div></aside></section><nav class="tabs" aria-label="Compass sections"><button class="tab-btn active" data-tab="explore" aria-pressed="true">Explore</button><button class="tab-btn" data-tab="learn" aria-pressed="false">Learn</button><button class="tab-btn" data-tab="workflows" aria-pressed="false">Workflows</button><button class="tab-btn" data-tab="code" aria-pressed="false">Code</button><button class="tab-btn" data-tab="challenges" aria-pressed="false">Challenges</button><button class="tab-btn" data-tab="glossary" aria-pressed="false">Glossary</button><button class="tab-btn" data-tab="philosophy" aria-pressed="false">Philosophy</button></nav><section id="explore" class="tab-panel active section"><h2>Explore the field</h2><p class="lede">Curated databases and tools. Filter by task, level and resource type; then move into Learn or Workflows when you want guided training.</p><div class="controls"><input id="search" aria-label="Search resources" placeholder="Search by tool, task, category or keyword…"><select id="kind" aria-label="Resource type"><option value="all">All types</option><option value="database">Databases</option><option value="tool">Tools</option></select><select id="level" aria-label="Difficulty level"><option value="all">All levels</option><option value="Beginner">Beginner</option><option value="Intermediate">Intermediate</option></select><select id="category" aria-label="Category"><option value="all">All categories</option></select></div><div class="result-count" id="resultCount" aria-live="polite"></div><div class="resource-layout"><aside class="side-index"><strong>Jump to</strong><div id="categoryNav"></div></aside><div id="resourceGroups"></div></div></section><section id="learn" class="tab-panel section"><h2>Guided learning paths</h2><p class="lede">Every lesson follows the same five-layer model: concept → method → practical → interpretation → challenge.</p><div id="lessonGrid" class="grid two"></div></section><section id="workflows" class="tab-panel section"><h2>I want to…</h2><p class="lede">Start from a biological task rather than from a software name.</p><div id="workflowGrid" class="grid two"></div></section><section id="code" class="tab-panel section"><h2>Code laboratory</h2><p class="lede">Short, inspectable examples designed for teaching. The PDB exercises deliberately begin without Biopython so the file format is understood before abstraction.</p><div id="codeGrid" class="grid two"></div></section><section id="challenges" class="tab-panel section"><h2>Challenges & assessment</h2><p class="lede">Use these after completing a learning path. They emphasize interpretation rather than button-clicking.</p><div id="challengeGrid" class="grid two"></div></section><section id="glossary" class="tab-panel section"><h2>Bioinformatics glossary</h2><p class="lede">Concise definitions of terms that repeatedly appear in practical analysis.</p><dl id="glossaryGrid" class="glossary-grid"></dl></section><section id="philosophy" class="tab-panel section philosophy-section"><div class="philosophy-head"><div><div class="eyebrow">Science is also a way of thinking</div><h2>Philosophy</h2><p class="lede">A quiet corner of Bioinfo Compass for curiosity, persistence, scientific humility and the habits that make computational work meaningful.</p></div><button class="btn secondary" id="surpriseMe" type="button">Surprise me</button></div><section class="thought-section" aria-labelledby="thoughtHeading"><div class="section-label">Section 1</div><h3 id="thoughtHeading">A thought for today</h3><p class="lede">Ideas worth carrying into the laboratory, classroom, or the next difficult problem.</p><article class="quote-card" id="philosophyQuote" aria-live="polite"></article><button class="btn secondary philosophy-action" id="anotherThought" type="button">Another thought</button></section><section class="stories-section" aria-labelledby="storyHeading"><div class="section-label">Section 2</div><div class="story-heading-row"><div><h3 id="storyHeading">Stories from the Compass</h3><p class="lede">Short scientific comics about mistakes, uncertainty, debugging, validation and discovery.</p></div><button class="btn secondary philosophy-action" id="anotherStory" type="button">Another story</button></div><article class="comic-book" aria-live="polite"><header class="comic-titlebar"><div><div class="kicker" id="storyTheme"></div><h3 id="storyTitle"></h3></div></header><div class="comic-grid" id="comicPanels"></div><div class="closing-thought"><span>Compass thought</span><strong id="storyClosing"></strong></div></article></section><p class="collection-note">The page selects from a larger internal collection. Only the current thought and story are shown in the interface; selections do not auto-rotate while you are reading.</p></section>
+<section class="section" id="contact">
+  <h2>Contact & affiliation</h2>
+  <div class="notice">Institutional affiliation: Central University of Himachal Pradesh. This website is an independent educational and academic resource and should not be interpreted as an official university service unless explicitly stated.</div>
+</section>
+</main><footer class="footer"><div class="footer-inner">Bioinfo Compass is an independent educational resource curated by Prof. Mahesh Kulharia. External tools and databases remain subject to their own access, licensing and citation policies.</div></footer>
+<script>
+window.RESOURCE_DATA = [
+  {
+    "kind": "database",
+    "category": "Chemical & drug databases",
+    "name": "ChEMBL",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "A manually curated database of bioactive molecules with drug-like properties, built around extracted binding, functional, and pharmacological data from the medicinal chemistry literature. Widely used in cheminformatics and QSAR work.",
+    "url": "https://www.ebi.ac.uk/chembl/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Chemical & drug databases",
+    "name": "DrugBank",
+    "code": "University of Alberta",
+    "beginner": true,
+    "intro": "A resource combining detailed drug data — mechanism, targets, interactions, pharmacokinetics — with the target proteins those drugs act on. Useful for connecting a protein target back to any known or investigational drugs against it.",
+    "url": "https://go.drugbank.com/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Chemical & drug databases",
+    "name": "PubChem",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "A vast open repository of chemical structures and their measured biological activities, spanning small molecules tested across thousands of assays. A common starting point for looking up a compound's structure, properties, or bioactivity data.",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Chemical & drug databases",
+    "name": "ZINC",
+    "code": "UCSF (Irwin/Shoichet lab)",
+    "beginner": false,
+    "intro": "A free database of commercially available compounds prepared in ready-to-dock 3D formats, built specifically for virtual screening workflows. A standard library source when setting up a docking campaign.",
+    "url": "https://zinc.docking.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Disease & variant databases",
+    "name": "ClinVar",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "A public archive of relationships between human genetic variants and their reported clinical significance, aggregated from clinical labs, research groups, and expert panels. The standard reference when interpreting whether a specific variant is likely pathogenic.",
+    "url": "https://www.ncbi.nlm.nih.gov/clinvar/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Disease & variant databases",
+    "name": "COSMIC",
+    "code": "Wellcome Sanger",
+    "beginner": false,
+    "intro": "The Catalogue of Somatic Mutations in Cancer, cataloging mutations found in human cancers across genes, tumor types, and cell lines. A core resource for cancer genomics and mutation-frequency lookups.",
+    "url": "https://cancer.sanger.ac.uk/cosmic",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Disease & variant databases",
+    "name": "dbSNP",
+    "code": "NCBI",
+    "beginner": false,
+    "intro": "NCBI's archive of short genetic variation — SNPs, small insertions and deletions — each assigned a stable \"rs\" identifier used throughout the literature and other databases. Useful for translating between rsIDs and genomic coordinates.",
+    "url": "https://www.ncbi.nlm.nih.gov/snp/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Disease & variant databases",
+    "name": "GWAS Catalog",
+    "code": "EBI/NHGRI",
+    "beginner": false,
+    "intro": "A curated collection of published genome-wide association study results, linking traits and diseases to the SNPs found associated with them. The go-to resource for checking what a locus has previously been associated with.",
+    "url": "https://www.ebi.ac.uk/gwas/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Disease & variant databases",
+    "name": "OMIM",
+    "code": "Johns Hopkins",
+    "beginner": true,
+    "intro": "Online Mendelian Inheritance in Man — a catalog of human genes and genetic disorders, with narrative summaries connecting phenotype to underlying gene. Often the first reference for \"what is this hereditary condition and which gene causes it.\"",
+    "url": "https://www.omim.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Expression analysis & statistics",
+    "name": "DESeq2",
+    "code": "Bioconductor (Huber/Love/Anders)",
+    "beginner": true,
+    "intro": "An R/Bioconductor package for detecting differentially expressed genes from RNA-seq count data, using a negative-binomial model that has become close to a default standard in the field.",
+    "url": "https://bioconductor.org/packages/release/bioc/html/DESeq2.html",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Expression analysis & statistics",
+    "name": "edgeR",
+    "code": "Bioconductor (WEHI)",
+    "beginner": false,
+    "intro": "Another widely used R/Bioconductor package for differential expression analysis of RNA-seq and similar count data, often taught alongside DESeq2 as the two standard options students compare.",
+    "url": "https://bioconductor.org/packages/release/bioc/html/edgeR.html",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Expression analysis & statistics",
+    "name": "Galaxy",
+    "code": "Galaxy Project",
+    "beginner": true,
+    "intro": "A free web-based platform that lets you build and run bioinformatics analyses — alignment, variant calling, RNA-seq, and more — through a point-and-click interface with no programming required. A gentle entry point before moving to the command line.",
+    "url": "https://usegalaxy.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Gene expression & omics",
+    "name": "ArrayExpress",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "EBI's equivalent functional genomics archive, exchanging records with GEO under the same international data-sharing agreements. Some journals or funders specify one archive over the other for deposition.",
+    "url": "https://www.ebi.ac.uk/biostudies/arrayexpress",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Gene expression & omics",
+    "name": "GEO (Gene Expression Omnibus)",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "A public archive for functional genomics data — microarray, RNA-seq, ChIP-seq, and more — deposited alongside the papers that generated it. The default place to find a published expression dataset to reanalyze.",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Gene expression & omics",
+    "name": "GTEx (Genotype-Tissue Expression)",
+    "code": "Broad/NIH",
+    "beginner": false,
+    "intro": "A reference dataset and portal mapping gene expression and its genetic regulation across dozens of human tissue types from hundreds of donors. Commonly used to check whether a gene of interest is tissue-specific or to look up eQTLs.",
+    "url": "https://gtexportal.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Gene expression & omics",
+    "name": "Human Protein Atlas",
+    "code": "KTH/Uppsala",
+    "beginner": true,
+    "intro": "A large-scale mapping of human protein expression across tissues, cell types, and subcellular locations, built largely from antibody-based imaging alongside RNA data. A good visual sanity check for \"where is this protein actually found.\"",
+    "url": "https://www.proteinatlas.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Gene expression & omics",
+    "name": "MGnify",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "EMBL-EBI's platform for analyzing and archiving microbiome sequencing data — metagenomic, metatranscriptomic, and amplicon datasets — with taxonomic and functional annotation built in. Featured regularly in the NAR database issue as a core microbiome resource.",
+    "url": "https://www.ebi.ac.uk/metagenomics/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Gene expression & omics",
+    "name": "SRA (Sequence Read Archive)",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "The raw-read repository behind most public sequencing data — the unassembled, unaligned FASTQ-level output of an experiment. Almost every RNA-seq or genome resequencing project you reanalyze from scratch starts with an SRA download.",
+    "url": "https://www.ncbi.nlm.nih.gov/sra",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Genome assembly & annotation",
+    "name": "MAKER",
+    "code": "Yandell Lab, Utah",
+    "beginner": false,
+    "intro": "An automated pipeline for annotating a newly assembled genome, combining evidence from sequence homology, transcript alignments, and gene predictors into a consensus gene set. Common in non-model organism genome projects.",
+    "url": "https://www.yandell-lab.org/software/maker.html",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Genome assembly & annotation",
+    "name": "Prokka",
+    "code": "Torsten Seemann",
+    "beginner": true,
+    "intro": "A rapid annotation tool purpose-built for bacterial, archaeal, and viral genomes, producing a full set of standard annotation files from a raw assembly in minutes. Popular for its simplicity relative to MAKER-style pipelines.",
+    "url": "https://github.com/tseemann/prokka",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Genome assembly & annotation",
+    "name": "SPAdes",
+    "code": "Center for Algorithmic Biotech, SPbU",
+    "beginner": false,
+    "intro": "A genome assembler originally built for bacterial genomes from short sequencing reads, now extended to handle a range of assembly scenarios including single-cell and metagenomic data. A common default for reference-free bacterial assembly.",
+    "url": "https://cab.spbu.ru/software/spades/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Genome browsers & assemblies",
+    "name": "Ensembl",
+    "code": "EMBL-EBI/Sanger",
+    "beginner": true,
+    "intro": "A genome browser and annotation platform covering vertebrate and other genomes, with gene models, variation, comparative genomics, and regulatory data layered on one browser. A common source of genome coordinates and orthology calls for downstream scripts.",
+    "url": "https://www.ensembl.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Genome browsers & assemblies",
+    "name": "NCBI Genome",
+    "code": "NCBI",
+    "beginner": false,
+    "intro": "NCBI's portal for assembled genomes across all domains of life, linking each assembly to its annotation, related BioProjects, and sequencing data. Useful as a starting index when you need \"the\" genome for an organism rather than a browser session.",
+    "url": "https://www.ncbi.nlm.nih.gov/genome/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Genome browsers & assemblies",
+    "name": "UCSC Genome Browser",
+    "code": "UC Santa Cruz",
+    "beginner": true,
+    "intro": "One of the original web genome browsers, prized for its huge library of user-contributed and institutional annotation tracks that can be stacked and compared visually. The Table Browser tool makes it easy to pull custom coordinate sets without coding.",
+    "url": "https://genome.ucsc.edu/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Literature & ontology",
+    "name": "Gene Ontology (GO)",
+    "code": "GO Consortium",
+    "beginner": true,
+    "intro": "A structured, controlled vocabulary describing gene products in terms of molecular function, biological process, and cellular component, used to annotate genes consistently across species and databases. Central to any enrichment analysis of a gene list.",
+    "url": "https://geneontology.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Literature & ontology",
+    "name": "MeSH (Medical Subject Headings)",
+    "code": "NLM",
+    "beginner": false,
+    "intro": "The controlled vocabulary the National Library of Medicine uses to index articles in PubMed, letting you search by concept rather than guessing every possible keyword. Understanding MeSH terms makes literature searches far more precise.",
+    "url": "https://www.ncbi.nlm.nih.gov/mesh/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Literature & ontology",
+    "name": "PubMed",
+    "code": "NCBI/NLM",
+    "beginner": true,
+    "intro": "The primary search engine for biomedical literature, indexing citations and abstracts from journals across the life sciences. The default starting point for any literature search in the field.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Literature & ontology",
+    "name": "Rfam",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "The RNA counterpart to Pfam — a collection of non-coding RNA families, each represented by a sequence alignment, consensus secondary structure, and covariance model. Regularly updated and reported in the NAR database issue, central to any ncRNA annotation task.",
+    "url": "https://rfam.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular biology & cloning",
+    "name": "NEBcutter",
+    "code": "New England Biolabs",
+    "beginner": true,
+    "intro": "A free online restriction site finder — paste in a DNA sequence and it maps every cut site for Type II and commercially available Type III restriction enzymes, with views for gels, fragments, and open reading frames. A staple for planning cloning and digest experiments.",
+    "url": "https://nc3.neb.com/NEBcutter/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular biology & cloning",
+    "name": "Primer-BLAST",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "NCBI's primer design tool that pairs Primer3's design engine with a BLAST specificity check, so the primers it suggests are screened against a genome or database to avoid accidentally amplifying the wrong target. A very common next step after learning plain Primer3.",
+    "url": "https://www.ncbi.nlm.nih.gov/tools/primer-blast/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular biology & cloning",
+    "name": "Primer3",
+    "code": "ELIXIR / Primer3 project",
+    "beginner": true,
+    "intro": "The classic, open-source workhorse for designing PCR primers, plus hybridization probes and sequencing primers, from a pasted DNA sequence. Free, fast, and usually the first primer design tool students are taught.",
+    "url": "https://primer3.ut.ee/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular biology & cloning",
+    "name": "SnapGene",
+    "code": "GSL Biotech / Dotmatics",
+    "beginner": false,
+    "intro": "A molecular biology application for planning, simulating, and documenting cloning experiments, showing plasmid maps, simulating restriction digests, and walking through multi-step cloning strategies like Gibson Assembly and Golden Gate. Widely used in labs; a free Viewer version is also available.",
+    "url": "https://www.snapgene.com/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular dynamics & docking",
+    "name": "AutoDock Vina",
+    "code": "Scripps (Trott/Olson)",
+    "beginner": true,
+    "intro": "A fast, open-source molecular docking program for predicting how a small molecule binds to a protein target, widely used in virtual screening because of its speed and ease of setup relative to full MD.",
+    "url": "https://vina.scripps.edu/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular dynamics & docking",
+    "name": "GROMACS",
+    "code": "community (KTH/Uppsala origins)",
+    "beginner": false,
+    "intro": "A high-performance molecular dynamics simulation package for modeling the physical movement of atoms in proteins, lipids, and nucleic acids over time. One of the most widely used MD engines in academic research.",
+    "url": "https://www.gromacs.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Molecular dynamics & docking",
+    "name": "VMD",
+    "code": "UIUC (Theoretical & Computational Biophysics Group)",
+    "beginner": false,
+    "intro": "Visual Molecular Dynamics, a program for visualizing and analyzing large biomolecular systems and MD simulation trajectories, commonly paired with GROMACS or NAMD output.",
+    "url": "https://www.ks.uiuc.edu/Research/vmd/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Pathways & interactions",
+    "name": "BioGRID",
+    "code": "Mount Sinai/Lunenfeld",
+    "beginner": false,
+    "intro": "A curated repository of protein and genetic interactions drawn directly from the primary literature, with an emphasis on traceable experimental evidence. Complements STRING when you need interactions with their original source citations attached.",
+    "url": "https://thebiogrid.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Pathways & interactions",
+    "name": "KEGG",
+    "code": "Kyoto University",
+    "beginner": true,
+    "intro": "A manually curated encyclopedia of metabolic and signaling pathways, linking genes to the pathway diagrams they act in across many organisms. The pathway maps are a standard reference figure format across the field.",
+    "url": "https://www.genome.jp/kegg/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Pathways & interactions",
+    "name": "MIBiG",
+    "code": "Wageningen/community",
+    "beginner": false,
+    "intro": "A curated repository standardizing information about biosynthetic gene clusters — the genomic regions that encode natural product pathways in microbes and fungi. A specialist resource for students moving into natural-product genome mining.",
+    "url": "https://mibig.secondarymetabolites.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Pathways & interactions",
+    "name": "Reactome",
+    "code": "OICR/EBI/NYU",
+    "beginner": false,
+    "intro": "A peer-reviewed, open-source database of human biological pathways and reactions, built by domain experts and cross-linked to genes, proteins, and small molecules. Often used for pathway enrichment analysis after a differential expression study.",
+    "url": "https://reactome.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Pathways & interactions",
+    "name": "STRING",
+    "code": "CPR/EMBL/SIB",
+    "beginner": true,
+    "intro": "A database of known and predicted protein-protein interactions, combining experimental evidence, text mining, and computational prediction into a single confidence-scored network. A common first step for turning a gene list into an interaction network figure.",
+    "url": "https://string-db.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Phylogenetics",
+    "name": "IQ-TREE",
+    "code": "community/Vienna",
+    "beginner": false,
+    "intro": "A fast maximum-likelihood tree inference tool with built-in automatic model selection, now a common alternative to RAxML for many phylogenomic studies. Comes with a convenient web server version for smaller jobs.",
+    "url": "http://www.iqtree.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Phylogenetics",
+    "name": "MEGA",
+    "code": "Temple/Arizona State",
+    "beginner": true,
+    "intro": "A desktop application bundling sequence alignment, model selection, and tree-building into one graphical interface, widely used for teaching phylogenetics because it needs no command line. A common first tool for building your first tree.",
+    "url": "https://www.megasoftware.net/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Phylogenetics",
+    "name": "RAxML",
+    "code": "Heidelberg Institute",
+    "beginner": false,
+    "intro": "A command-line program for maximum-likelihood phylogenetic tree inference, long a standard choice for large-scale analyses due to its speed and reliability on big alignments.",
+    "url": "https://cme.h-its.org/exelixis/web/software/raxml/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Programming & pipeline frameworks",
+    "name": "Bioconductor",
+    "code": "Bioconductor project",
+    "beginner": true,
+    "intro": "An open-source repository of R packages for the analysis of genomic data, hosting thousands of tools including DESeq2 and edgeR under a shared set of data structures and conventions. The R-world equivalent of Biopython's ecosystem.",
+    "url": "https://bioconductor.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Programming & pipeline frameworks",
+    "name": "Biopython",
+    "code": "Biopython project",
+    "beginner": true,
+    "intro": "A Python library providing tools for parsing sequence files, querying databases like NCBI and running many bioinformatics tasks programmatically. Usually the first library a student learning Python for biology installs.",
+    "url": "https://biopython.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Programming & pipeline frameworks",
+    "name": "Nextflow",
+    "code": "Seqera Labs",
+    "beginner": false,
+    "intro": "A workflow orchestration tool for building portable, scalable computational pipelines that run identically on a laptop, cluster, or cloud. Widely used in production genomics pipelines and the nf-core community pipeline collection.",
+    "url": "https://www.nextflow.io/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Programming & pipeline frameworks",
+    "name": "Snakemake",
+    "code": "community (Köster lab)",
+    "beginner": false,
+    "intro": "A Python-based workflow management system for defining reproducible, scalable bioinformatics pipelines as a set of rules with declared inputs and outputs, popular for its readable, make-like syntax.",
+    "url": "https://snakemake.readthedocs.io/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Sequence alignment",
+    "name": "BLAST",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "The Basic Local Alignment Search Tool, used to find regions of similarity between a query sequence and everything in a chosen database. Almost always the first tool a student runs to ask \"what is this sequence, or what is it related to.\"",
+    "url": "https://blast.ncbi.nlm.nih.gov/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Sequence alignment",
+    "name": "Bowtie2",
+    "code": "JHU",
+    "beginner": false,
+    "intro": "A fast, memory-efficient aligner for mapping short sequencing reads to a long reference genome, particularly suited to reads around 50-100+ bp. A common choice for RNA-seq and ChIP-seq read alignment pipelines.",
+    "url": "https://bowtie-bio.sourceforge.net/bowtie2/index.shtml",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Sequence alignment",
+    "name": "BWA",
+    "code": "Sanger/Broad",
+    "beginner": false,
+    "intro": "The Burrows-Wheeler Aligner, a widely used tool for mapping sequencing reads against a large reference genome, especially favored for whole-genome resequencing and variant-calling pipelines feeding into tools like GATK.",
+    "url": "https://bio-bwa.sourceforge.net/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Sequence alignment",
+    "name": "Clustal Omega",
+    "code": "EMBL-EBI",
+    "beginner": true,
+    "intro": "A fast multiple sequence alignment tool for proteins and nucleotides, built to scale to large numbers of sequences while staying accurate. A common default choice when you need a quick, reliable MSA rather than the absolute best possible one.",
+    "url": "https://www.ebi.ac.uk/jdispatcher/msa/clustalo",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Sequence alignment",
+    "name": "MAFFT",
+    "code": "CBRC, Japan",
+    "beginner": false,
+    "intro": "A multiple sequence alignment program offering several algorithm modes trading off speed against accuracy, popular for handling large or divergent sequence sets well. Frequently preferred over Clustal-family tools for phylogenetics-grade alignments.",
+    "url": "https://mafft.cbrc.jp/alignment/software/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "DDBJ",
+    "code": "NIG, Japan",
+    "beginner": false,
+    "intro": "The DNA Data Bank of Japan, the third member of the international nucleotide collaboration alongside GenBank and ENA. Particularly useful for sequences submitted from Japanese and broader Asia-Pacific research groups.",
+    "url": "https://www.ddbj.nig.ac.jp/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "ENA (European Nucleotide Archive)",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "EMBL-EBI's counterpart to GenBank, part of the International Nucleotide Sequence Database Collaboration that keeps records synchronized across NCBI, EBI, and DDBJ. Strong for raw sequencing read archives alongside assembled sequences.",
+    "url": "https://www.ebi.ac.uk/ena/browser/home",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "GenBank",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "The NIH's primary nucleotide sequence archive, covering essentially all publicly available DNA and RNA sequences submitted by researchers worldwide. It is the usual first stop for retrieving a sequence by accession number or gene name.",
+    "url": "https://www.ncbi.nlm.nih.gov/genbank/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "InterPro",
+    "code": "EMBL-EBI",
+    "beginner": true,
+    "intro": "A protein classification resource that combines thirteen member signature databases, including Pfam, into one search, sorting proteins into families and flagging their domains and functional sites. Featured yearly in the NAR database issue as one of the field's core annotation resources.",
+    "url": "https://www.ebi.ac.uk/interpro/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "Pfam",
+    "code": "EMBL-EBI",
+    "beginner": true,
+    "intro": "A long-standing collection of protein domain families, each defined by a curated alignment and a hidden Markov model, now accessed through the InterPro website rather than its own separate portal. A NAR database issue regular, and often the first place students meet the idea of a protein domain family.",
+    "url": "https://www.ebi.ac.uk/interpro/entry/pfam/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "RefSeq",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "NCBI's curated, non-redundant set of reference sequences for genomes, transcripts, and proteins. Where GenBank holds every submission, RefSeq gives you one representative, stable record per gene or genome to build analyses on.",
+    "url": "https://www.ncbi.nlm.nih.gov/refseq/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Sequence databases",
+    "name": "UniProt",
+    "code": "EBI/SIB/PIR",
+    "beginner": true,
+    "intro": "The reference protein sequence and annotation resource, combining the curated Swiss-Prot entries with the larger, automatically annotated TrEMBL set. For any protein-level question — function, domains, variants — this is usually where to look first.",
+    "url": "https://www.uniprot.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "AlphaFold Protein Structure Database",
+    "code": "DeepMind/EBI",
+    "beginner": true,
+    "intro": "A database of predicted protein structures generated by the AlphaFold model, covering nearly all catalogued proteins across many species — vastly more than the experimentally solved PDB. Each model comes with a per-residue confidence score worth reading before trusting a region.",
+    "url": "https://alphafold.ebi.ac.uk/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "CATH",
+    "code": "UCL",
+    "beginner": false,
+    "intro": "A hierarchical classification of protein domain structures by Class, Architecture, Topology, and Homologous superfamily. Used to ask \"what is this fold related to\" rather than \"what is this sequence similar to.\"",
+    "url": "https://www.cathdb.info/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "EMDB (Electron Microscopy Data Bank)",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "The archive for 3D density maps from cryo-EM and related electron microscopy methods, complementing the atomic-coordinate focus of the PDB. Relevant once a structure is large or flexible enough that EM, rather than crystallography, was the method of choice.",
+    "url": "https://www.ebi.ac.uk/emdb/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "MobiDB",
+    "code": "University of Padova",
+    "beginner": false,
+    "intro": "A database of intrinsically disordered protein regions, aggregating disorder annotations from the literature, experiments, and predictions for essentially all known protein sequences. Useful once you need to know which parts of a protein resist forming a fixed 3D structure.",
+    "url": "https://mobidb.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "PDB (RCSB Protein Data Bank)",
+    "code": "RCSB",
+    "beginner": true,
+    "intro": "The global archive of experimentally determined 3D structures of proteins, nucleic acids, and complexes, solved by X-ray crystallography, NMR, and cryo-EM. Nearly every structural biology or docking project starts by pulling a coordinate file from here.",
+    "url": "https://www.rcsb.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "PDBe",
+    "code": "EMBL-EBI",
+    "beginner": false,
+    "intro": "The European mirror and interface to the same worldwide PDB archive, with its own visualization and chemical component tools. Useful when you want EBI-style search and mapping features layered on the same structural data.",
+    "url": "https://www.ebi.ac.uk/pdbe/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Structure databases",
+    "name": "SCOP",
+    "code": "MRC-LMB",
+    "beginner": false,
+    "intro": "A structural classification of proteins built around evolutionary relationships between folds and families, curated by expert review rather than fully automated methods. Often used alongside or compared against CATH.",
+    "url": "https://scop.mrc-lmb.cam.ac.uk/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Structure prediction & visualization",
+    "name": "AlphaFold",
+    "code": "Google DeepMind",
+    "beginner": false,
+    "intro": "The deep-learning model that predicts a protein's 3D structure from its amino acid sequence with near-experimental accuracy for many targets. The open-source code lets you run predictions yourself; most students instead query the precomputed AlphaFold DB.",
+    "url": "https://github.com/google-deepmind/alphafold",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Structure prediction & visualization",
+    "name": "ColabFold",
+    "code": "Steinegger/Mirdita/Ovchinnikov",
+    "beginner": false,
+    "level": "Intermediate",
+    "intro": "A browser-friendly route to AlphaFold-style protein structure prediction, commonly used for teaching and exploratory work when a local GPU installation is impractical.",
+    "url": "https://github.com/sokrypton/ColabFold",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Structure prediction & visualization",
+    "name": "Foldseek",
+    "code": "Steinegger/Söding labs",
+    "beginner": false,
+    "intro": "A protein structure search tool that finds similar structures across huge databases like the PDB and AlphaFold DB in seconds rather than hours, by encoding shape into a fast-searchable alphabet. Runs as a free web server, no installation needed for quick lookups.",
+    "url": "https://search.foldseek.com/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Structure prediction & visualization",
+    "name": "MODELLER",
+    "code": "Sali Lab, UCSF",
+    "beginner": false,
+    "intro": "A program for comparative (homology) protein structure modeling, building a 3D model of a protein from the known structure of a related template. A staple in structural biology courses that predate the AlphaFold era.",
+    "url": "https://salilab.org/modeller/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Structure prediction & visualization",
+    "name": "PyMOL",
+    "code": "Schrödinger",
+    "beginner": true,
+    "intro": "A molecular visualization program for rendering, exploring, and publishing images of protein and small-molecule structures, scriptable in Python for reproducible figures. One of the most widely taught tools for looking at PDB structures.",
+    "url": "https://pymol.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Structure prediction & visualization",
+    "name": "UCSF ChimeraX",
+    "code": "UCSF RBVI",
+    "beginner": true,
+    "intro": "A modern molecular visualization and analysis platform, the successor to Chimera, built for high-quality rendering of structures, densities, and large assemblies. Good next step once you outgrow PyMOL's learning curve for complex scenes.",
+    "url": "https://www.cgl.ucsf.edu/chimerax/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Taxonomy & phylogenetics",
+    "name": "ITIS",
+    "code": "US federal partnership",
+    "beginner": false,
+    "intro": "The Integrated Taxonomic Information System, a authoritative reference for standardized biological species names, mainly used in ecology, conservation, and biodiversity work rather than molecular pipelines.",
+    "url": "https://www.itis.gov/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Taxonomy & phylogenetics",
+    "name": "NCBI Taxonomy",
+    "code": "NCBI",
+    "beginner": true,
+    "intro": "The standard reference taxonomy used to organize essentially all NCBI sequence and genome data by organism, from kingdom down to strain. Most bioinformatics pipelines resolve species names against this database at some point.",
+    "url": "https://www.ncbi.nlm.nih.gov/taxonomy",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "database",
+    "category": "Taxonomy & phylogenetics",
+    "name": "TreeBASE",
+    "code": "community-run",
+    "beginner": false,
+    "intro": "A repository of published phylogenetic trees and the underlying character-state matrices that produced them, letting you retrieve and re-examine a tree from a specific paper rather than just its figure.",
+    "url": "https://www.treebase.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Variant calling",
+    "name": "GATK",
+    "code": "Broad Institute",
+    "beginner": false,
+    "intro": "The Genome Analysis Toolkit, an industry-standard suite for identifying SNPs and indels in sequencing data, built around a \"best practices\" workflow used across clinical and research pipelines alike.",
+    "url": "https://gatk.broadinstitute.org/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Variant calling",
+    "name": "SAMtools",
+    "code": "community (htslib)",
+    "beginner": true,
+    "intro": "A core toolkit for manipulating SAM/BAM/CRAM alignment files — sorting, indexing, filtering, and basic variant calling. So foundational that almost every alignment-based pipeline touches it somewhere.",
+    "url": "https://www.htslib.org/",
+    "level": "Beginner",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  },
+  {
+    "kind": "tool",
+    "category": "Variant calling",
+    "name": "VCFtools",
+    "code": "community",
+    "beginner": false,
+    "intro": "A set of command-line utilities for working with VCF (Variant Call Format) files — filtering, comparing, and computing summary statistics on called variants once GATK or another caller has produced them.",
+    "url": "https://vcftools.github.io/",
+    "level": "Intermediate",
+    "reviewed": "Sep 2026",
+    "source": "Official source"
+  }
+];
+
+</script>
+<script>
+window.PHILOSOPHY_QUOTES = [
+  {
+    "id": "quote-001",
+    "text": "The difficult result is often the one that teaches you how the system really works.",
+    "author": "Bioinfo Compass",
+    "category": "Persistence"
+  },
+  {
+    "id": "quote-002",
+    "text": "A clean figure can hide a weak question; begin with the question.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-003",
+    "text": "When the output surprises you, inspect the assumptions before you inspect the colors.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-004",
+    "text": "Curiosity is useful when it survives the first error message.",
+    "author": "Bioinfo Compass",
+    "category": "Curiosity"
+  },
+  {
+    "id": "quote-005",
+    "text": "A failed analysis is not wasted if it exposes the next question.",
+    "author": "Bioinfo Compass",
+    "category": "Failure"
+  },
+  {
+    "id": "quote-006",
+    "text": "The fastest route to confidence is usually a slower route through validation.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-007",
+    "text": "If a result matters, try to break it before you believe it.",
+    "author": "Bioinfo Compass",
+    "category": "Skepticism"
+  },
+  {
+    "id": "quote-008",
+    "text": "Good science becomes stronger when the inconvenient observation is allowed to speak.",
+    "author": "Bioinfo Compass",
+    "category": "Humility"
+  },
+  {
+    "id": "quote-009",
+    "text": "Understanding begins where copy-and-paste stops.",
+    "author": "Bioinfo Compass",
+    "category": "Learning"
+  },
+  {
+    "id": "quote-010",
+    "text": "A tool can calculate. Only reasoning can decide what the calculation means.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-011",
+    "text": "The first plausible answer is the beginning of analysis, not the end.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-012",
+    "text": "Complex workflows are built from small steps that have been made explicit.",
+    "author": "Bioinfo Compass",
+    "category": "Learning"
+  },
+  {
+    "id": "quote-013",
+    "text": "The terminal is not judging you; it is reporting what you asked it to do.",
+    "author": "Bioinfo Compass",
+    "category": "Programming"
+  },
+  {
+    "id": "quote-014",
+    "text": "An error message is often the most honest sentence in a computational experiment.",
+    "author": "Bioinfo Compass",
+    "category": "Failure"
+  },
+  {
+    "id": "quote-015",
+    "text": "Reproducibility is respect for the scientist who comes after you — including your future self.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-016",
+    "text": "A model is useful because it is incomplete in a controlled way.",
+    "author": "Bioinfo Compass",
+    "category": "Modeling"
+  },
+  {
+    "id": "quote-017",
+    "text": "Confidence grows from tested assumptions, not from impressive output.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-018",
+    "text": "The most valuable control is often the one you hoped you would not need.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-019",
+    "text": "Before asking which software is best, ask which question you are actually trying to answer.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-020",
+    "text": "Data rarely arrive organized according to your hypothesis.",
+    "author": "Bioinfo Compass",
+    "category": "Research"
+  },
+  {
+    "id": "quote-021",
+    "text": "The patient scientist notices what the hurried scientist averages away.",
+    "author": "Bioinfo Compass",
+    "category": "Patience"
+  },
+  {
+    "id": "quote-022",
+    "text": "A biological sequence is not just text; it is evidence with a history.",
+    "author": "Bioinfo Compass",
+    "category": "Bioinformatics"
+  },
+  {
+    "id": "quote-023",
+    "text": "The better you understand the file format, the less mysterious the software becomes.",
+    "author": "Bioinfo Compass",
+    "category": "Learning"
+  },
+  {
+    "id": "quote-024",
+    "text": "A strong result survives changes in viewpoint, not merely changes in plotting style.",
+    "author": "Bioinfo Compass",
+    "category": "Robustness"
+  },
+  {
+    "id": "quote-025",
+    "text": "Do not fear uncertainty; measure it.",
+    "author": "Bioinfo Compass",
+    "category": "Uncertainty"
+  },
+  {
+    "id": "quote-026",
+    "text": "A negative result can still be precise, informative, and worth keeping.",
+    "author": "Bioinfo Compass",
+    "category": "Failure"
+  },
+  {
+    "id": "quote-027",
+    "text": "When two methods agree, ask why. When they disagree, ask harder.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-028",
+    "text": "A parameter you did not record is an experiment you may not be able to repeat.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-029",
+    "text": "Every automated pipeline should have at least one place where a human still thinks.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-030",
+    "text": "The best shortcut is often knowing which steps must never be skipped.",
+    "author": "Bioinfo Compass",
+    "category": "Judgment"
+  },
+  {
+    "id": "quote-031",
+    "text": "A beautiful phylogenetic tree cannot rescue a poor alignment.",
+    "author": "Bioinfo Compass",
+    "category": "Phylogenetics"
+  },
+  {
+    "id": "quote-032",
+    "text": "A low docking score is a suggestion, not a verdict.",
+    "author": "Bioinfo Compass",
+    "category": "Docking"
+  },
+  {
+    "id": "quote-033",
+    "text": "An RMSD plateau is a clue, not a certificate of convergence.",
+    "author": "Bioinfo Compass",
+    "category": "Molecular dynamics"
+  },
+  {
+    "id": "quote-034",
+    "text": "A top BLAST hit is evidence only after coverage, identity, and context are examined.",
+    "author": "Bioinfo Compass",
+    "category": "Sequence analysis"
+  },
+  {
+    "id": "quote-035",
+    "text": "The outlier is guilty of nothing until investigated.",
+    "author": "Bioinfo Compass",
+    "category": "Data analysis"
+  },
+  {
+    "id": "quote-036",
+    "text": "Before deleting noise, make sure biology is not whispering through it.",
+    "author": "Bioinfo Compass",
+    "category": "Data analysis"
+  },
+  {
+    "id": "quote-037",
+    "text": "The question 'what would change my mind?' is a useful part of every analysis plan.",
+    "author": "Bioinfo Compass",
+    "category": "Skepticism"
+  },
+  {
+    "id": "quote-038",
+    "text": "A script becomes science when its assumptions become visible.",
+    "author": "Bioinfo Compass",
+    "category": "Programming"
+  },
+  {
+    "id": "quote-039",
+    "text": "If you cannot explain the workflow without naming the software, you may not yet understand the workflow.",
+    "author": "Bioinfo Compass",
+    "category": "Learning"
+  },
+  {
+    "id": "quote-040",
+    "text": "The strongest computational result is one that knows its own limitations.",
+    "author": "Bioinfo Compass",
+    "category": "Humility"
+  },
+  {
+    "id": "quote-041",
+    "text": "A result that cannot be reproduced is a memory, not yet a method.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-042",
+    "text": "Version numbers are small details until they become the reason two analyses disagree.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-043",
+    "text": "Do not optimize the code before you have validated the idea.",
+    "author": "Bioinfo Compass",
+    "category": "Programming"
+  },
+  {
+    "id": "quote-044",
+    "text": "When a simulation crashes, the system has given you data about your setup.",
+    "author": "Bioinfo Compass",
+    "category": "Molecular dynamics"
+  },
+  {
+    "id": "quote-045",
+    "text": "Evidence is stronger when alternative explanations have been invited in and tested.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-046",
+    "text": "Science advances by replacing certainty with better questions.",
+    "author": "Bioinfo Compass",
+    "category": "Curiosity"
+  },
+  {
+    "id": "quote-047",
+    "text": "Read the axis before reading the story.",
+    "author": "Bioinfo Compass",
+    "category": "Data interpretation"
+  },
+  {
+    "id": "quote-048",
+    "text": "A p-value does not know whether an effect matters biologically.",
+    "author": "Bioinfo Compass",
+    "category": "Statistics"
+  },
+  {
+    "id": "quote-049",
+    "text": "More data can amplify a bad design just as efficiently as a good one.",
+    "author": "Bioinfo Compass",
+    "category": "Study design"
+  },
+  {
+    "id": "quote-050",
+    "text": "The computer is extraordinarily obedient, including when your instructions are wrong.",
+    "author": "Bioinfo Compass",
+    "category": "Programming"
+  },
+  {
+    "id": "quote-051",
+    "text": "A workflow is trustworthy when every transformation can be explained.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-052",
+    "text": "The purpose of visualization is not decoration; it is disciplined seeing.",
+    "author": "Bioinfo Compass",
+    "category": "Data interpretation"
+  },
+  {
+    "id": "quote-053",
+    "text": "Ask what the missing data might be saying before treating them as empty space.",
+    "author": "Bioinfo Compass",
+    "category": "Data analysis"
+  },
+  {
+    "id": "quote-054",
+    "text": "The best debugging question is often: what did I assume would be true here?",
+    "author": "Bioinfo Compass",
+    "category": "Programming"
+  },
+  {
+    "id": "quote-055",
+    "text": "Biology is full of exceptions; good analysis distinguishes exceptions from errors.",
+    "author": "Bioinfo Compass",
+    "category": "Bioinformatics"
+  },
+  {
+    "id": "quote-056",
+    "text": "The answer produced fastest is not necessarily the question answered best.",
+    "author": "Bioinfo Compass",
+    "category": "Patience"
+  },
+  {
+    "id": "quote-057",
+    "text": "A method becomes yours when you can explain why each step exists.",
+    "author": "Bioinfo Compass",
+    "category": "Learning"
+  },
+  {
+    "id": "quote-058",
+    "text": "The point of a benchmark is not to win; it is to discover where the method fails.",
+    "author": "Bioinfo Compass",
+    "category": "Validation"
+  },
+  {
+    "id": "quote-059",
+    "text": "If your conclusion depends on one threshold, explore the neighborhood around that threshold.",
+    "author": "Bioinfo Compass",
+    "category": "Robustness"
+  },
+  {
+    "id": "quote-060",
+    "text": "A model should earn complexity by improving understanding, not merely fit.",
+    "author": "Bioinfo Compass",
+    "category": "Modeling"
+  },
+  {
+    "id": "quote-061",
+    "text": "Good code reduces ambiguity; good science reduces unwarranted certainty.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-062",
+    "text": "Store the raw data. Your future question may not resemble your present one.",
+    "author": "Bioinfo Compass",
+    "category": "Research"
+  },
+  {
+    "id": "quote-063",
+    "text": "A surprising result deserves neither instant belief nor instant deletion.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-064",
+    "text": "The best computational habits are quiet: naming files well, recording versions, checking units, saving seeds.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-065",
+    "text": "A graph can reveal a relationship, but it cannot supply a mechanism.",
+    "author": "Bioinfo Compass",
+    "category": "Data interpretation"
+  },
+  {
+    "id": "quote-066",
+    "text": "Before adding another algorithm, inspect the data you already have.",
+    "author": "Bioinfo Compass",
+    "category": "Research"
+  },
+  {
+    "id": "quote-067",
+    "text": "The distance between output and insight is crossed by interpretation.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-068",
+    "text": "When a workflow becomes routine, that is exactly when its assumptions are easiest to forget.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  },
+  {
+    "id": "quote-069",
+    "text": "Scientific humility is not weakness; it is error control for the mind.",
+    "author": "Bioinfo Compass",
+    "category": "Humility"
+  },
+  {
+    "id": "quote-070",
+    "text": "A reproducible mistake is still a mistake — but at least now it can be found.",
+    "author": "Bioinfo Compass",
+    "category": "Reproducibility"
+  },
+  {
+    "id": "quote-071",
+    "text": "Small tests prevent large mysteries.",
+    "author": "Bioinfo Compass",
+    "category": "Programming"
+  },
+  {
+    "id": "quote-072",
+    "text": "The best dataset is not the largest one; it is the one that can answer the question cleanly.",
+    "author": "Bioinfo Compass",
+    "category": "Study design"
+  },
+  {
+    "id": "quote-073",
+    "text": "When results disagree with expectation, investigate before explaining them away.",
+    "author": "Bioinfo Compass",
+    "category": "Evidence"
+  },
+  {
+    "id": "quote-074",
+    "text": "Learning computational biology is learning to move carefully between biology, mathematics, and code.",
+    "author": "Bioinfo Compass",
+    "category": "Learning"
+  },
+  {
+    "id": "quote-075",
+    "text": "The final figure is often the shortest part of a long chain of reasoning.",
+    "author": "Bioinfo Compass",
+    "category": "Scientific thinking"
+  }
+];
+
+</script>
+<script>
+window.PHILOSOPHY_STORIES = [
+  {
+    "id": "story-001",
+    "title": "The First BLAST Hit",
+    "theme": "Sequence analysis",
+    "closingThought": "A result is not an answer until you understand what the result means.",
+    "panels": [
+      {
+        "scene": "A student stares at a BLAST results page, delighted.",
+        "speaker": "Student",
+        "dialogue": "Found it! The first hit must be the protein.",
+        "narration": ""
+      },
+      {
+        "scene": "A mentor looks over the screen.",
+        "speaker": "Mentor",
+        "dialogue": "Identity?",
+        "narration": ""
+      },
+      {
+        "scene": "The student checks the table.",
+        "speaker": "Student",
+        "dialogue": "92%.",
+        "narration": ""
+      },
+      {
+        "scene": "The mentor points to another column.",
+        "speaker": "Mentor",
+        "dialogue": "Coverage?",
+        "narration": ""
+      },
+      {
+        "scene": "The student notices the alignment covers only a small domain.",
+        "speaker": "Student",
+        "dialogue": "Ah. I identified a conserved piece, not necessarily the whole protein.",
+        "narration": "The excitement stays — but the claim gets better."
+      }
+    ]
+  },
+  {
+    "id": "story-002",
+    "title": "The Failed Simulation",
+    "theme": "Molecular dynamics",
+    "closingThought": "Sometimes failure is the experiment that tells you what you failed to ask.",
+    "panels": [
+      {
+        "scene": "A long GROMACS job stops with an error.",
+        "speaker": "Student",
+        "dialogue": "Hours of setup. Gone.",
+        "narration": ""
+      },
+      {
+        "scene": "The student opens the log instead of restarting blindly.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "One warning mentions an impossible contact near the ligand."
+      },
+      {
+        "scene": "They inspect the ligand state.",
+        "speaker": "Student",
+        "dialogue": "The protonation is wrong.",
+        "narration": ""
+      },
+      {
+        "scene": "The topology is rebuilt and checked.",
+        "speaker": "Student",
+        "dialogue": "So the crash was telling me something physical.",
+        "narration": ""
+      },
+      {
+        "scene": "The rerun begins.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The failed run becomes part of the reasoning, not a discarded embarrassment."
+      }
+    ]
+  },
+  {
+    "id": "story-003",
+    "title": "The Empty Terminal",
+    "theme": "Python",
+    "closingThought": "Complex programs are usually built from small problems that stopped being mysterious.",
+    "panels": [
+      {
+        "scene": "A Python script throws an error on the first line.",
+        "speaker": "Student",
+        "dialogue": "I am not made for programming.",
+        "narration": ""
+      },
+      {
+        "scene": "They fix a missing quote. Another error appears.",
+        "speaker": "Terminal",
+        "dialogue": "FileNotFoundError",
+        "narration": ""
+      },
+      {
+        "scene": "They correct the file path. Another error appears.",
+        "speaker": "Student",
+        "dialogue": "One at a time.",
+        "narration": ""
+      },
+      {
+        "scene": "The FASTA sequence finally prints.",
+        "speaker": "Student",
+        "dialogue": "It works.",
+        "narration": ""
+      },
+      {
+        "scene": "The student looks back at the short script.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Nothing magical happened. Several small mysteries became understood."
+      }
+    ]
+  },
+  {
+    "id": "story-004",
+    "title": "The Beautiful Tree",
+    "theme": "Phylogenetics",
+    "closingThought": "The figure comes last. The reasoning comes first.",
+    "panels": [
+      {
+        "scene": "A student proudly presents a colorful phylogenetic tree.",
+        "speaker": "Student",
+        "dialogue": "Look at those branches!",
+        "narration": ""
+      },
+      {
+        "scene": "The professor asks one question.",
+        "speaker": "Professor",
+        "dialogue": "Were all these sequences homologous?",
+        "narration": ""
+      },
+      {
+        "scene": "Another question follows.",
+        "speaker": "Professor",
+        "dialogue": "Did you inspect the alignment?",
+        "narration": ""
+      },
+      {
+        "scene": "The student opens the MSA and sees badly aligned regions.",
+        "speaker": "Student",
+        "dialogue": "The tree is prettier than the data deserve.",
+        "narration": ""
+      },
+      {
+        "scene": "They return to sequence selection and alignment.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The second tree is less dramatic — and more defensible."
+      }
+    ]
+  },
+  {
+    "id": "story-005",
+    "title": "The Lowest Docking Score",
+    "theme": "Docking",
+    "closingThought": "Numbers become evidence only after assumptions are examined.",
+    "panels": [
+      {
+        "scene": "A docking table shows one ligand at the top.",
+        "speaker": "Student",
+        "dialogue": "−10.2! We found the best drug.",
+        "narration": ""
+      },
+      {
+        "scene": "The mentor starts a list.",
+        "speaker": "Mentor",
+        "dialogue": "Protonation? Binding-site validation? Redocking? Known ligand?",
+        "narration": ""
+      },
+      {
+        "scene": "The list keeps growing.",
+        "speaker": "Mentor",
+        "dialogue": "Pose plausibility? Metals? Waters? Experimental evidence?",
+        "narration": ""
+      },
+      {
+        "scene": "The student looks again at the single score.",
+        "speaker": "Student",
+        "dialogue": "So this is a hypothesis, not a conclusion.",
+        "narration": ""
+      },
+      {
+        "scene": "They begin validation.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The number becomes useful when placed inside a chain of evidence."
+      }
+    ]
+  },
+  {
+    "id": "story-006",
+    "title": "The Strange Outlier",
+    "theme": "Data analysis",
+    "closingThought": "An outlier can be noise. It can also be biology asking to be noticed.",
+    "panels": [
+      {
+        "scene": "A scatter plot contains one distant point.",
+        "speaker": "Researcher 1",
+        "dialogue": "Delete that. It ruins the trend.",
+        "narration": ""
+      },
+      {
+        "scene": "A student checks the metadata.",
+        "speaker": "Student",
+        "dialogue": "Different lineage. Same phenotype.",
+        "narration": ""
+      },
+      {
+        "scene": "They inspect the genome.",
+        "speaker": "Student",
+        "dialogue": "And a different resistance mechanism.",
+        "narration": ""
+      },
+      {
+        "scene": "The room goes quiet.",
+        "speaker": "Researcher 1",
+        "dialogue": "So it wasn't a bad point.",
+        "narration": ""
+      },
+      {
+        "scene": "The analysis is stratified.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The outlier becomes a clue to hidden structure."
+      }
+    ]
+  },
+  {
+    "id": "story-007",
+    "title": "The Overnight Job",
+    "theme": "Computation",
+    "closingThought": "Computation produces output. Scientists produce understanding.",
+    "panels": [
+      {
+        "scene": "A student launches a long job.",
+        "speaker": "Student",
+        "dialogue": "Now we wait.",
+        "narration": ""
+      },
+      {
+        "scene": "They check the progress bar every few minutes.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "1%. 2%. 3%."
+      },
+      {
+        "scene": "The next morning, the job is complete.",
+        "speaker": "Student",
+        "dialogue": "Success!",
+        "narration": ""
+      },
+      {
+        "scene": "They open the results and stare.",
+        "speaker": "Student",
+        "dialogue": "What does this pattern mean?",
+        "narration": ""
+      },
+      {
+        "scene": "A notebook opens beside the computer.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The real work begins after the progress bar reaches 100%."
+      }
+    ]
+  },
+  {
+    "id": "story-008",
+    "title": "The Missing Seed",
+    "theme": "Reproducibility",
+    "closingThought": "A parameter you do not record can become the reason you cannot repeat your own result.",
+    "panels": [
+      {
+        "scene": "Two runs of the same stochastic workflow give different answers.",
+        "speaker": "Student",
+        "dialogue": "But I used the same code.",
+        "narration": ""
+      },
+      {
+        "scene": "They compare settings.",
+        "speaker": "Student",
+        "dialogue": "Same inputs. Same version. Same parameters…",
+        "narration": ""
+      },
+      {
+        "scene": "The mentor asks quietly.",
+        "speaker": "Mentor",
+        "dialogue": "Random seed?",
+        "narration": ""
+      },
+      {
+        "scene": "Silence.",
+        "speaker": "Student",
+        "dialogue": "I never saved it.",
+        "narration": ""
+      },
+      {
+        "scene": "The methods template gains a new field.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Reproducibility improves one forgotten detail at a time."
+      }
+    ]
+  },
+  {
+    "id": "story-009",
+    "title": "The Perfect Heatmap",
+    "theme": "Statistics",
+    "closingThought": "A visualization can clarify evidence, but it cannot repair a weak design.",
+    "panels": [
+      {
+        "scene": "A heatmap glows with dramatic clusters.",
+        "speaker": "Student",
+        "dialogue": "This looks publishable.",
+        "narration": ""
+      },
+      {
+        "scene": "A collaborator asks about group sizes.",
+        "speaker": "Collaborator",
+        "dialogue": "How many biological replicates?",
+        "narration": ""
+      },
+      {
+        "scene": "The student hesitates.",
+        "speaker": "Student",
+        "dialogue": "Two in one group. Three in the other.",
+        "narration": ""
+      },
+      {
+        "scene": "They revisit normalization, design, and uncertainty.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The colors become less important than the experimental structure."
+      },
+      {
+        "scene": "The revised figure is simpler.",
+        "speaker": "Student",
+        "dialogue": "Now I know what it can actually support.",
+        "narration": ""
+      }
+    ]
+  },
+  {
+    "id": "story-010",
+    "title": "The Version Number",
+    "theme": "Reproducibility",
+    "closingThought": "Small metadata become large facts when results need to be reproduced.",
+    "panels": [
+      {
+        "scene": "A pipeline that worked last month now fails.",
+        "speaker": "Student",
+        "dialogue": "Nothing changed.",
+        "narration": ""
+      },
+      {
+        "scene": "A package manager shows an updated dependency.",
+        "speaker": "Student",
+        "dialogue": "Almost nothing changed.",
+        "narration": ""
+      },
+      {
+        "scene": "They recreate the old environment.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The workflow runs."
+      },
+      {
+        "scene": "The student adds an environment file to the project.",
+        "speaker": "Student",
+        "dialogue": "Future me deserves better documentation.",
+        "narration": ""
+      },
+      {
+        "scene": "The commit message reads: pin versions.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Reproducibility acquires a version number."
+      }
+    ]
+  },
+  {
+    "id": "story-011",
+    "title": "The Protein With No Name",
+    "theme": "Annotation",
+    "closingThought": "When one line of evidence is weak, combine independent clues.",
+    "panels": [
+      {
+        "scene": "An unknown protein has no convincing full-length BLAST hit.",
+        "speaker": "Student",
+        "dialogue": "No answer.",
+        "narration": ""
+      },
+      {
+        "scene": "InterPro detects two conserved domains.",
+        "speaker": "Student",
+        "dialogue": "Two clues.",
+        "narration": ""
+      },
+      {
+        "scene": "AlphaFold predicts a confident fold; Foldseek finds structural relatives.",
+        "speaker": "Student",
+        "dialogue": "Three clues.",
+        "narration": ""
+      },
+      {
+        "scene": "The predicted function remains cautious.",
+        "speaker": "Student",
+        "dialogue": "Probable, not proven.",
+        "narration": ""
+      },
+      {
+        "scene": "The annotation is written with evidence and uncertainty.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Inference becomes stronger by convergence, not by confidence alone."
+      }
+    ]
+  },
+  {
+    "id": "story-012",
+    "title": "The Deleted Column",
+    "theme": "Data management",
+    "closingThought": "Raw data are cheap to keep and expensive to reconstruct.",
+    "panels": [
+      {
+        "scene": "A student removes columns they think are unnecessary.",
+        "speaker": "Student",
+        "dialogue": "Cleaner file.",
+        "narration": ""
+      },
+      {
+        "scene": "Weeks later, a reviewer asks about collection date.",
+        "speaker": "Student",
+        "dialogue": "That column was in the original export.",
+        "narration": ""
+      },
+      {
+        "scene": "The cleaned file cannot answer the question.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The source must be retrieved again."
+      },
+      {
+        "scene": "A new project structure appears: raw / processed / results.",
+        "speaker": "Student",
+        "dialogue": "Never overwrite raw data.",
+        "narration": ""
+      },
+      {
+        "scene": "The lesson survives longer than the inconvenience.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Good data habits are a form of scientific memory."
+      }
+    ]
+  },
+  {
+    "id": "story-013",
+    "title": "The 5 Å Rule",
+    "theme": "Structural bioinformatics",
+    "closingThought": "A threshold is a convention until biology and sensitivity analysis justify it.",
+    "panels": [
+      {
+        "scene": "A script labels every residue within 5 Å as interacting.",
+        "speaker": "Student",
+        "dialogue": "Five angstroms means interaction.",
+        "narration": ""
+      },
+      {
+        "scene": "The mentor asks why five.",
+        "speaker": "Mentor",
+        "dialogue": "What changes at 4.9 versus 5.1?",
+        "narration": ""
+      },
+      {
+        "scene": "The student reruns the analysis across several cutoffs.",
+        "speaker": "Student",
+        "dialogue": "Some conclusions are stable; others disappear.",
+        "narration": ""
+      },
+      {
+        "scene": "Interaction types are examined explicitly.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Hydrogen bonds, metals, salt bridges, and hydrophobic contacts do not share one universal geometry."
+      },
+      {
+        "scene": "The methods section becomes more precise.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The threshold becomes an assumption that has been tested."
+      }
+    ]
+  },
+  {
+    "id": "story-014",
+    "title": "The Fast Pipeline",
+    "theme": "Workflow design",
+    "closingThought": "Speed is valuable only after correctness has somewhere to stand.",
+    "panels": [
+      {
+        "scene": "A new pipeline finishes ten times faster.",
+        "speaker": "Developer",
+        "dialogue": "Tenfold speedup!",
+        "narration": ""
+      },
+      {
+        "scene": "A validation set is run.",
+        "speaker": "Colleague",
+        "dialogue": "Why are 18% of records missing?",
+        "narration": ""
+      },
+      {
+        "scene": "An optimization had silently filtered edge cases.",
+        "speaker": "Developer",
+        "dialogue": "The fast path skipped the difficult data.",
+        "narration": ""
+      },
+      {
+        "scene": "Tests are added before optimization resumes.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Correctness becomes the reference point."
+      },
+      {
+        "scene": "The final pipeline is still faster.",
+        "speaker": "Developer",
+        "dialogue": "Now the speed means something.",
+        "narration": ""
+      }
+    ]
+  },
+  {
+    "id": "story-015",
+    "title": "The Significant Gene",
+    "theme": "Statistics",
+    "closingThought": "Statistical significance is a property of an analysis; biological importance requires interpretation.",
+    "panels": [
+      {
+        "scene": "A gene has an adjusted p-value of 0.0001.",
+        "speaker": "Student",
+        "dialogue": "This must be the key gene.",
+        "narration": ""
+      },
+      {
+        "scene": "The effect size is tiny.",
+        "speaker": "Mentor",
+        "dialogue": "How large is the change?",
+        "narration": ""
+      },
+      {
+        "scene": "The gene is highly expressed but changes by only a few percent.",
+        "speaker": "Student",
+        "dialogue": "Statistically clear, biologically uncertain.",
+        "narration": ""
+      },
+      {
+        "scene": "Pathway context and replication are examined.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The claim becomes narrower and stronger."
+      },
+      {
+        "scene": "The student rewrites the conclusion.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Precision replaces excitement without removing discovery."
+      }
+    ]
+  },
+  {
+    "id": "story-016",
+    "title": "The Copy-Pasted Command",
+    "theme": "Learning",
+    "closingThought": "A command becomes knowledge when you can predict what its inputs and outputs mean.",
+    "panels": [
+      {
+        "scene": "A student pastes a long terminal command from a tutorial.",
+        "speaker": "Student",
+        "dialogue": "It ran!",
+        "narration": ""
+      },
+      {
+        "scene": "The instructor points to one flag.",
+        "speaker": "Instructor",
+        "dialogue": "What does this option do?",
+        "narration": ""
+      },
+      {
+        "scene": "The student searches the documentation.",
+        "speaker": "Student",
+        "dialogue": "I don't know yet.",
+        "narration": ""
+      },
+      {
+        "scene": "They rewrite the command across multiple lines with comments.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Each parameter gets a reason."
+      },
+      {
+        "scene": "The command is longer on the page but shorter in mystery.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Understanding replaces memorization."
+      }
+    ]
+  },
+  {
+    "id": "story-017",
+    "title": "The Convenient Control",
+    "theme": "Experimental design",
+    "closingThought": "Controls are strongest when they can genuinely prove you wrong.",
+    "panels": [
+      {
+        "scene": "A workflow performs well against an easy negative control.",
+        "speaker": "Student",
+        "dialogue": "Excellent discrimination.",
+        "narration": ""
+      },
+      {
+        "scene": "A colleague examines the control.",
+        "speaker": "Colleague",
+        "dialogue": "Could any reasonable method fail this test?",
+        "narration": ""
+      },
+      {
+        "scene": "They build a harder, physics-matched control.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Performance drops."
+      },
+      {
+        "scene": "The student smiles despite the worse number.",
+        "speaker": "Student",
+        "dialogue": "Now we are learning what the method really knows.",
+        "narration": ""
+      },
+      {
+        "scene": "The benchmark becomes harder and more informative.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "A good control is an adversary, not a decoration."
+      }
+    ]
+  },
+  {
+    "id": "story-018",
+    "title": "The Confounded Association",
+    "theme": "Genomic epidemiology",
+    "closingThought": "Association becomes explanation only after alternative structure is accounted for.",
+    "panels": [
+      {
+        "scene": "A gene is strongly associated with antimicrobial resistance.",
+        "speaker": "Student",
+        "dialogue": "We found the determinant.",
+        "narration": ""
+      },
+      {
+        "scene": "Population structure is added to the model.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The association weakens sharply."
+      },
+      {
+        "scene": "The gene is common in one resistant lineage.",
+        "speaker": "Student",
+        "dialogue": "The lineage carried both the gene and the phenotype.",
+        "narration": ""
+      },
+      {
+        "scene": "Mechanism and lineage are modeled separately.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "A smaller set of robust signals remains."
+      },
+      {
+        "scene": "The conclusion changes.",
+        "speaker": "Student",
+        "dialogue": "Confounding was part of the biology we needed to understand.",
+        "narration": ""
+      }
+    ]
+  },
+  {
+    "id": "story-019",
+    "title": "The Confident AlphaFold Model",
+    "theme": "Structure prediction",
+    "closingThought": "Confidence scores are part of the model, not an optional footnote.",
+    "panels": [
+      {
+        "scene": "A predicted structure looks beautifully folded.",
+        "speaker": "Student",
+        "dialogue": "We have the structure.",
+        "narration": ""
+      },
+      {
+        "scene": "The mentor switches on confidence coloring.",
+        "speaker": "Mentor",
+        "dialogue": "Do we?",
+        "narration": ""
+      },
+      {
+        "scene": "One domain is high-confidence; a long linker is not.",
+        "speaker": "Student",
+        "dialogue": "The picture hid the uncertainty.",
+        "narration": ""
+      },
+      {
+        "scene": "PAE shows uncertain domain orientation.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The model is useful, but not uniformly so."
+      },
+      {
+        "scene": "The figure is redrawn with confidence shown.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "A better visualization makes uncertainty visible."
+      }
+    ]
+  },
+  {
+    "id": "story-020",
+    "title": "The Reviewer’s Question",
+    "theme": "Research practice",
+    "closingThought": "A difficult question can improve a study more than an easy compliment.",
+    "panels": [
+      {
+        "scene": "A reviewer asks for an analysis the team had hoped to avoid.",
+        "speaker": "Student",
+        "dialogue": "They don't understand our method.",
+        "narration": ""
+      },
+      {
+        "scene": "The team reproduces the concern on their own data.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "A hidden sensitivity appears."
+      },
+      {
+        "scene": "The analysis is redesigned.",
+        "speaker": "Student",
+        "dialogue": "The reviewer found the weak joint.",
+        "narration": ""
+      },
+      {
+        "scene": "The revised result is narrower but more stable.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "The paper loses a dramatic sentence and gains credibility."
+      },
+      {
+        "scene": "The response letter ends with thanks.",
+        "speaker": "",
+        "dialogue": "",
+        "narration": "Critique becomes part of the experiment."
+      }
+    ]
+  }
+];
+
+</script>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const resources=(window.RESOURCE_DATA||[]).map(r=>({...r,level:r.level|| (r.beginner?'Beginner':'Intermediate')}));
+const lessons=[
+{tag:'Sequence analysis',title:'1. From FASTA to biological inference',time:'60–90 min',prereq:'None',body:`<div class="step"><div class="step-num">1</div><div><strong>Concept</strong><p>Learn FASTA structure, accession numbers and why sequence provenance matters.</p></div></div><div class="step"><div class="step-num">2</div><div><strong>Method</strong><p>Retrieve a sequence, inspect it, then use local alignment to identify related records.</p></div></div><div class="step"><div class="step-num">3</div><div><strong>Practical</strong><p>Download <a href="data:text/plain;charset=utf-8,%3Eunknown_protein_training%0AMKWVTFISLLFLFSSAYSRGVFRRDTHKSEIAHRFKDLGE%0A" download="unknown_protein.fasta">unknown_protein.fasta</a>, run BLAST, then compare identity, coverage and annotation.</p></div></div><div class="step"><div class="step-num">4</div><div><strong>Interpret</strong><p>Do not choose a hit solely because it appears first. Evaluate coverage, identity, domain context and annotation quality.</p></div></div><div class="mistake"><strong>Common mistake:</strong> smallest E-value ≠ automatically the biologically correct annotation.</div>`},
+{tag:'Phylogenetics',title:'2. Alignment to evolutionary tree',time:'90–120 min',prereq:'Sequence alignment',body:`<p class="why">Sequences → homology assessment → MSA → alignment inspection → model selection → tree inference → support → rooting → interpretation.</p><div class="step"><div class="step-num">1</div><div><strong>Concept</strong><p>Separate similarity from homology and orthology from paralogy.</p></div></div><div class="step"><div class="step-num">2</div><div><strong>Practical</strong><p>Use <a href="data:text/plain;charset=utf-8,%3Eseq_A%0AMKTAYIAKQRQISFVKSHFSRQ%0A%3Eseq_B%0AMKTAYIAKQKQISFVKSHFSRQ%0A%3Eseq_C%0AMRTAYIAKQRQVSFIKSHFTRQ%0A" download="msa_example.fasta">msa_example.fasta</a>. Compare a teaching-friendly MEGA route with an IQ-TREE maximum-likelihood route.</p></div></div><div class="mistake"><strong>Common mistake:</strong> a tree can be computed from a poor alignment; that does not make it biologically meaningful.</div>`},
+{tag:'Molecular docking',title:'3. Docking as a hypothesis, not an answer',time:'90 min',prereq:'Protein structure basics',body:`<p class="why">Structure quality → preparation → ligand state → binding-site definition → docking → pose inspection → controls.</p><div class="step"><div class="step-num">1</div><div><strong>Concept</strong><p>Docking proposes plausible poses and rankings under a scoring model.</p></div></div><div class="step"><div class="step-num">2</div><div><strong>Validation</strong><p>Use redocking, known ligands, decoys and pose RMSD where appropriate.</p></div></div><div class="mistake"><strong>Common mistake:</strong> a docking score is not an experimental binding affinity and should not be reported as one.</div>`},
+{tag:'Molecular dynamics',title:'4. Molecular dynamics from setup to interpretation',time:'2–4 h + compute',prereq:'PDB + terminal basics',body:`<p class="why">PDB → force field → topology → box → solvation → ions → minimisation → NVT → NPT → production → analysis.</p><div class="step"><div class="step-num">1</div><div><strong>Practical</strong><p>Trace the role of each GROMACS stage and identify which files are inputs and outputs.</p></div></div><div class="step"><div class="step-num">2</div><div><strong>Interpret</strong><p>Combine RMSD with RMSF, radius of gyration, hydrogen bonding, energy traces and the biological question.</p></div></div><div class="mistake"><strong>Common mistake:</strong> an RMSD plateau alone does not prove that sampling is converged or biologically adequate.</div>`},
+{tag:'Python',title:'5. Python for Bioinformatics',time:'6 short lessons',prereq:'No prior Python required',body:`<p>Strings → lists/tuples/dictionaries → conditions/loops → functions → files → FASTA → translation → PDB parsing → Biopython.</p><p>Use the Code tab for runnable examples. The progression deliberately mirrors real biological file formats rather than generic programming exercises.</p>`},
+{tag:'PDB literacy',title:'6. Understand a PDB before using a library',time:'60 min',prereq:'Basic Python',body:`<p>Learn ATOM, HETATM, chain, residue, coordinates, occupancy and B-factor using <a href="data:text/plain;charset=utf-8,HEADER%20%20%20%20TRAINING%20MINI%20STRUCTURE%0AATOM%20%20%20%20%20%201%20%20N%20%20%20ALA%20A%20%20%201%20%20%20%20%20%2011.104%20%2013.207%20%2010.226%20%201.00%2020.00%20%20%20%20%20%20%20%20%20%20%20N%0AATOM%20%20%20%20%20%202%20%20CA%20%20ALA%20A%20%20%201%20%20%20%20%20%2012.560%20%2013.200%20%2010.100%20%201.00%2020.00%20%20%20%20%20%20%20%20%20%20%20C%0AATOM%20%20%20%20%20%203%20%20C%20%20%20ALA%20A%20%20%201%20%20%20%20%20%2013.100%20%2014.620%20%2010.390%20%201.00%2020.00%20%20%20%20%20%20%20%20%20%20%20C%0AATOM%20%20%20%20%20%204%20%20O%20%20%20ALA%20A%20%20%201%20%20%20%20%20%2012.450%20%2015.600%20%2010.010%20%201.00%2020.00%20%20%20%20%20%20%20%20%20%20%20O%0AHETATM%20%20%20%205%20%20C1%20%20LIG%20A%20101%20%20%20%20%20%2015.000%20%2013.500%20%2011.000%20%201.00%2020.00%20%20%20%20%20%20%20%20%20%20%20C%0AEND%0A" download="mini_structure.pdb">mini_structure.pdb</a>.</p><p>Exercises: count atoms; count residues; extract chain A; identify ligands; find Cα atoms; calculate a centroid; compute atom distances; find residues near a ligand.</p>`}
+];
+const workflows=[
+{title:'Identify an unknown protein sequence',steps:['FASTA quality check','BLAST','UniProt / RefSeq','InterPro / Pfam','AlphaFold DB','Foldseek / PDB','PyMOL or ChimeraX'],note:'Use multiple evidence layers before assigning function.'},
+{title:'Build a defensible phylogenetic tree',steps:['Choose homologous sequences','Inspect redundancy & taxon sampling','MAFFT / Clustal Omega','Inspect / trim alignment','Model selection','IQ-TREE / RAxML','Bootstrap/support','Root and interpret'],note:'Tree quality is constrained by sequence choice and alignment quality.'},
+{title:'Run a docking study',steps:['Select biological target','Inspect experimental structure','Prepare receptor','Prepare ligand/protonation','Define binding site','Dock with Vina','Inspect poses','Redock / controls','Report limitations'],note:'Treat docking as hypothesis generation.'},
+{title:'Run a basic MD simulation',steps:['Prepare PDB','Choose force field','Generate topology','Define box','Solvate','Add ions','Minimise','NVT','NPT','Production','Analyse'],note:'Record software version, parameters and random seeds where relevant.'},
+{title:'Analyse RNA-seq',steps:['Raw read QC','Alignment / quantification','Count matrix','Design model','DESeq2 / edgeR','Multiple-testing correction','Effect sizes','Biological interpretation'],note:'Statistical significance and biological importance are not identical.'},
+{title:'Design PCR primers',steps:['Define target','Primer3','Check specificity with Primer-BLAST','Inspect amplicon','Check secondary structure / constraints','Document sequence and coordinates'],note:'Specificity should be checked against the intended organism/background.'}
+];
+const codeLabs=[
+{title:'GC content',code:`dna = "ATGGCTTTTGAATGGTAA"\ngc = (dna.count("G") + dna.count("C")) / len(dna) * 100\nprint(f"GC% = {gc:.2f}")`,why:'Introduces strings, counting and quantitative sequence summaries.'},
+{title:'Read FASTA without Biopython',code:`def read_fasta(path):\n    seq = []\n    with open(path) as f:\n        for line in f:\n            line = line.strip()\n            if not line or line.startswith(">"):\n                continue\n            seq.append(line)\n    return "".join(seq)\n\nprint(read_fasta("unknown_protein.fasta"))`,why:'Students see exactly what the parser is doing.'},
+{title:'Count PDB atoms',code:`count = 0\nwith open("mini_structure.pdb") as f:\n    for line in f:\n        if line.startswith(("ATOM  ", "HETATM")):\n            count += 1\nprint(count)`,why:'Connects fixed-width structural records to Python file handling.'},
+{title:'Distance between two PDB atoms',code:`from math import sqrt\n\ndef xyz(line):\n    return tuple(float(line[a:b]) for a,b in [(30,38),(38,46),(46,54)])\n\ndef distance(a,b):\n    return sqrt(sum((x-y)**2 for x,y in zip(a,b)))`,why:'Builds geometric reasoning before using structural libraries.'}
+];
+const challenges=[
+{title:'Unknown sequence',task:'Use the supplied FASTA to propose an identity. Report the evidence you used, not merely the top hit.',rubric:'Identity/coverage, annotation quality, domain evidence, uncertainty.'},
+{title:'Phylogeny critique',task:'Given a tree with high bootstrap values, list three reasons the evolutionary interpretation could still be wrong.',rubric:'Alignment, sampling, paralogy, rooting/model assumptions.'},
+{title:'Docking interpretation',task:'Two ligands score −9.1 and −8.5 kcal/mol in Vina. Explain what can and cannot be concluded.',rubric:'Ranking uncertainty, scoring-function limits, pose plausibility, controls.'},
+{title:'MD interpretation',task:'RMSD reaches a plateau after 20 ns. Write the next analyses you would perform before claiming stability.',rubric:'RMSF, Rg, H-bonds, energy, replicates, convergence, biological observables.'},
+{title:'PDB programming',task:'Write a script that reports all HETATM residue names and their atom counts from mini_structure.pdb.',rubric:'Correct parsing, no hard-coded ligand name, readable output.'},
+{title:'Reproducibility',task:'Create a minimal methods record for one Compass workflow that another student could rerun.',rubric:'versions, inputs, parameters, outputs, seed/environment where relevant.'}
+];
+const glossary={FASTA:'A plain-text sequence format in which each record begins with a > header followed by sequence lines.', 'E-value':'In sequence searching, the number of matches with a score at least this good expected by chance under the search model.', Coverage:'The fraction of the query or target represented by an alignment or measurement.', RMSD:'Root-mean-square deviation; a coordinate-based measure of structural difference after an appropriate alignment.', 'Force field':'A mathematical model and parameter set used to estimate molecular energies and forces.', Bootstrap:'A resampling approach used to assess how consistently a phylogenetic split is recovered under perturbation of the data.', Orthologue:'Genes in different species related primarily by a speciation event.', Paralogue:'Genes related primarily by duplication within a lineage.', Domain:'A structural or functional unit of a protein that can often evolve semi-independently.', Motif:'A recurring sequence or structural pattern associated with a function or process.', pLDDT:'AlphaFold per-residue confidence score; it reports confidence, not experimental validation.', PAE:'Predicted aligned error; an AlphaFold confidence measure useful for assessing relative placement of regions or domains.', Trajectory:'A time-ordered series of molecular coordinates generated during a simulation.', 'Redocking':'Docking a known ligand back into a binding site to test whether a protocol can recover an observed pose.', Decoy:'A deliberately non-target or inactive comparison used to test discrimination and reduce over-interpretation.'};
+function openTab(id){$$('.tab-btn').forEach(b=>{let on=b.dataset.tab===id;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on)});$$('.tab-panel').forEach(p=>p.classList.toggle('active',p.id===id));history.replaceState(null,'','#'+id)}
+$$('.tab-btn').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.tab)));$$('[data-open-tab]').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.openTab)));if(location.hash&&$(location.hash))openTab(location.hash.slice(1));
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+function renderResources(){const q=$('#search').value.trim().toLowerCase(),k=$('#kind').value,l=$('#level').value,c=$('#category').value;const f=resources.filter(r=>(k==='all'||r.kind===k)&&(l==='all'||r.level===l)&&(c==='all'||r.category===c)&&(!q||[r.name,r.category,r.intro,r.code].join(' ').toLowerCase().includes(q)));$('#resultCount').textContent=`${f.length} resources shown`;const groups=[...new Set(f.map(x=>x.category))];$('#categoryNav').innerHTML=groups.map(g=>`<button data-jump="${esc(g)}">${esc(g)} <span class="status">${f.filter(x=>x.category===g).length}</span></button>`).join('');$('#resourceGroups').innerHTML=groups.map(g=>`<section id="cat-${slug(g)}"><h3>${esc(g)}</h3><div class="resource-grid">${f.filter(x=>x.category===g).map(r=>`<article class="resource-card"><div class="kicker">${r.kind==='database'?'Reference':'Tool'}</div><h4>${esc(r.name)}</h4><div class="meta">${esc(r.code)} · ${esc(r.level)} · reviewed ${esc(r.reviewed)}</div><p>${esc(r.intro)}</p><div class="resource-foot"><span><span class="pill">${esc(r.category)}</span></span><a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Official source ↗</a></div></article>`).join('')}</div></section>`).join('');$$('[data-jump]').forEach(b=>b.addEventListener('click',()=>$('#cat-'+slug(b.dataset.jump))?.scrollIntoView({behavior:'smooth'})))}
+function slug(s){return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+[...new Set(resources.map(r=>r.category))].sort().forEach(c=>$('#category').insertAdjacentHTML('beforeend',`<option>${esc(c)}</option>`));['search','kind','level','category'].forEach(id=>$('#'+id).addEventListener(id==='search'?'input':'change',renderResources));renderResources();
+$('#lessonGrid').innerHTML=lessons.map(x=>`<article class="lesson"><div class="kicker">${x.tag}</div><h3>${x.title}</h3><div><span class="pill">${x.time}</span><span class="pill">Prerequisite: ${x.prereq}</span></div>${x.body}</article>`).join('');
+$('#workflowGrid').innerHTML=workflows.map(w=>`<article class="workflow"><h3>${w.title}</h3>${w.steps.map((s,i)=>`<div class="step"><div class="step-num">${i+1}</div><div>${s}</div></div>`).join('')}<p class="why">${w.note}</p></article>`).join('');
+$('#codeGrid').innerHTML=codeLabs.map(x=>`<article class="card"><h3>${x.title}</h3><p>${x.why}</p><pre><code>${esc(x.code)}</code></pre></article>`).join('');
+$('#challengeGrid').innerHTML=challenges.map(x=>`<article class="challenge"><h3>${x.title}</h3><p><strong>Task:</strong> ${x.task}</p><p class="why"><strong>Assessment focus:</strong> ${x.rubric}</p></article>`).join('');
+$('#glossaryGrid').innerHTML=Object.entries(glossary).map(([k,v])=>`<div class="term"><dt>${k}</dt><dd>${v}</dd></div>`).join('');
+
+</script>
+<script>
+const philosophyQuotes = window.PHILOSOPHY_QUOTES || [];
+const philosophyStories = window.PHILOSOPHY_STORIES || [];
+
+function pickDifferent(items, storageKey) {
+  if (!items.length) return null;
+  const last = localStorage.getItem(storageKey);
+  let candidates = items.filter(x => x.id !== last);
+  if (!candidates.length) candidates = items;
+  const chosen = candidates[Math.floor(Math.random() * candidates.length)];
+  localStorage.setItem(storageKey, chosen.id);
+  return chosen;
+}
+function escapePhilosophy(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+}
+function renderQuote(q) {
+  if (!q) return;
+  document.getElementById('philosophyQuote').innerHTML = `
+    <div class="quote-mark" aria-hidden="true">“</div>
+    <blockquote>${escapePhilosophy(q.text)}</blockquote>
+    <div class="quote-meta"><span>${escapePhilosophy(q.author || 'Anonymous')}</span><span class="pill">${escapePhilosophy(q.category || 'Reflection')}</span></div>`;
+}
+function renderStory(story) {
+  if (!story) return;
+  document.getElementById('storyTitle').textContent = story.title;
+  document.getElementById('storyTheme').textContent = story.theme;
+  document.getElementById('comicPanels').innerHTML = story.panels.map((p, i) => `
+    <article class="comic-panel" aria-label="Panel ${i+1}: ${escapePhilosophy(p.scene)}">
+      <div class="panel-number">Panel ${i+1}</div>
+      <div class="comic-scene">${escapePhilosophy(p.scene)}</div>
+      ${p.dialogue ? `<div class="speech">${p.speaker ? `<strong>${escapePhilosophy(p.speaker)}:</strong> ` : ''}${escapePhilosophy(p.dialogue)}</div>` : ''}
+      ${p.narration ? `<div class="narration">${escapePhilosophy(p.narration)}</div>` : ''}
+    </article>`).join('');
+  document.getElementById('storyClosing').textContent = story.closingThought;
+}
+function newQuote() { renderQuote(pickDifferent(philosophyQuotes, 'bioinfoCompass:lastQuote')); }
+function newStory() { renderStory(pickDifferent(philosophyStories, 'bioinfoCompass:lastStory')); }
+function surpriseMe() { newQuote(); newStory(); }
+
+document.addEventListener('DOMContentLoaded', () => {
+  newQuote(); newStory();
+  document.getElementById('anotherThought')?.addEventListener('click', newQuote);
+  document.getElementById('anotherStory')?.addEventListener('click', newStory);
+  document.getElementById('surpriseMe')?.addEventListener('click', surpriseMe);
+});
+
+</script>
+</body></html>
